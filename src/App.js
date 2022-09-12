@@ -3,9 +3,10 @@ import Header from './Pages/Header';
 
 function App() {
   return (
-    <div>
+    <>
+
       <Header></Header>
-    </div>
+    </>
   );
 }
 
