@@ -4,6 +4,7 @@ import { useState } from 'react';
 import DrawerNavbar from './DrawerNavbar';
 import { Box } from '@mui/system';
 import CallIcon from '@mui/icons-material/Call';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const NavBar = styled(AppBar)`
@@ -65,9 +66,17 @@ const CallIco = styled(CallIcon)(({ theme }) => ({
 }));
 
 const Header = () => {
+    const navigate = useNavigate();
     const [value, setValue] = useState();
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('md'))
+
+    const navigateToAdmission = () => {
+        navigate('/admission')
+    }
+    const navigateToHome = () => {
+        navigate('/')
+    }
 
     const logoURL = 'https://i.ibb.co/kyBg7Yc/prasc.png';
     return (
@@ -96,9 +105,9 @@ const Header = () => {
                                 <Title>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
                                 <Tabs sx={{ marginLeft: 'auto' }} value={value} onChange={(e, value) => setValue(value)} textColor="white" indicatorColor="primary"
                                 >
-                                    <Tab label='Home' />
+                                    <Tab onClick={navigateToHome} label='Home' />
                                     <Tab label='Notice Board' />
-                                    <Tab label='Admission' />
+                                    <Tab onClick={navigateToAdmission} label='Admission' />
                                     <Tab label='Contact Us' />
                                     <Tab label='Governing Body' />
 

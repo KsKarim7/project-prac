@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import styled from '@emotion/styled';
+import { useNavigate } from 'react-router-dom';
 
 // const Pages = ["Home", "Notice Board", "Admission", "Contact Us"];
 
@@ -17,8 +18,16 @@ padding-bottom:12px
 
 
 const DrawerNavbar = () => {
+    const navigate = useNavigate();
 
-    const [openDrawer, setOpenDrawer] = useState(false)
+    const [openDrawer, setOpenDrawer] = useState(false);
+
+    const navigateToAdmission = () => {
+        navigate('/admission')
+    }
+    const navigateToHome = () => {
+        navigate('/')
+    }
     return (
         <>
             <Drawer open={openDrawer}
@@ -36,9 +45,9 @@ const DrawerNavbar = () => {
                     } */}
                     <ListItemButton>
                         <ListItemIcon onClick={() => setOpenDrawer(false)} style={{ display: 'block', color: 'white' }}>
-                            <ListItems>Home</ListItems>
+                            <ListItems onClick={navigateToHome}>Home</ListItems>
                             <ListItems>Notice Board</ListItems>
-                            <ListItems>Admission</ListItems>
+                            <ListItems onClick={navigateToAdmission}>Admission</ListItems>
                             <ListItems>Contact Us</ListItems>
                             <ListItems>Governing Body</ListItems>
                         </ListItemIcon>
