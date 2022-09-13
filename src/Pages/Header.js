@@ -64,15 +64,6 @@ const CallIco = styled(CallIcon)(({ theme }) => ({
 
 }));
 
-
-// const SubHeader = styled(Box)`
-// background-image:linear-gradient(to right, #b22222 11%, #008000 70%);
-// align-items: center;
-// justify-content: space-around;
-// `
-
-const Pages = ["Home", "Notice Board", "Admission", "Contact Us"]
-
 const Header = () => {
     const [value, setValue] = useState();
     const theme = useTheme();
@@ -105,15 +96,11 @@ const Header = () => {
                                 <Title>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
                                 <Tabs sx={{ marginLeft: 'auto' }} value={value} onChange={(e, value) => setValue(value)} textColor="white" indicatorColor="primary"
                                 >
-                                    {/* {
-                                        Pages.map((page, index) => (
-                                            <Tab key={index} label={page}></Tab>
-                                        ))
-                                    } */}
                                     <Tab label='Home' />
                                     <Tab label='Notice Board' />
                                     <Tab label='Admission' />
                                     <Tab label='Contact Us' />
+                                    <Tab label='Governing Body' />
 
                                 </Tabs>
                             </>
