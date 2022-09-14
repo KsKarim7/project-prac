@@ -10,8 +10,8 @@ import React from 'react';
 
 const MainBanner = styled(Box)(({ theme }) => ({
     display: 'grid',
-    margin: '200px 0',
-    padding: '0 100px',
+    margin: '200px 150px 50px 150px',
+    // padding: '0px 100px',
     gridTemplateColumns: '8fr 4fr',
     // overflow: 'hidden',
     [theme.breakpoints.down('lg')]: {
@@ -22,13 +22,14 @@ const MainBanner = styled(Box)(({ theme }) => ({
     }
 }))
 const Title = styled(Typography)(({ theme }) => ({
-    fontSize: '1.5em',
+    fontSize: '2.5rem',
     fontWeight: 'bold',
     // overflow: 'hidden',
     [theme.breakpoints.down('lg')]: {
         display: 'block',
         margin: '0 0',
         padding: '0 0px',
+        fontSize: '1.5em',
     }
 }))
 const MidBanner = styled(Typography)(({ theme }) => ({
@@ -55,7 +56,7 @@ const Banner = () => {
 
                 <Typography>কুমিল্লার রামকৃষ্ণপুর ডিগ্রি কলেজে কর্মরত একজন মহান অধ্যাপকের নামে এই প্রতিষ্ঠানটির নামকরণ করা হয়েছে। এটি সম্মান, ভালবাসা এবং গর্বের প্রতীক। আমাদের লক্ষ্য শিক্ষার্থীদের একটি জাতির বুদ্ধিবৃত্তিক ও নাগরিক জীবনে তাদের সঠিক স্থান নিতে সক্ষম করে একটি ন্যায় ও শান্তিপূর্ণ সমাজ গঠনের জন্য প্রস্তুত করা। শেষ পর্যন্ত আমাদের লক্ষ্য দক্ষতা, শ্রেষ্ঠত্ব এবং নৈতিক ন্যায়পরায়ণতা সহ সফল নেতা তৈরি করা। তাই আমরা বলতে পারি যে,"আপনার সন্তানের উজ্জ্বল ভবিষ্যৎ  এখানে ই শুরু "।</Typography>
             </MidBanner>
-            <Box><img style={{ width: '100%' }} src={logoURL} alt="" /></Box>
+            <Box><img style={{ width: '90%' }} src={logoURL} alt="" /></Box>
         </MainBanner>
     );
 };
