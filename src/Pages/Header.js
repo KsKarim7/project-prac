@@ -92,17 +92,17 @@ const Header = () => {
                     </BottomHeader>
                 </SubHeader>
                 <Toolbar>
-                    <img src={logoURL} alt="logo" style={{ width: 95 }} />
+                    <img onClick={navigateToHome} src={logoURL} alt="logo" style={{ width: 95 }} />
 
                     {
                         isMatch ? (
                             <>
-                                <Title>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
+                                <Title onClick={navigateToHome}>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
                                 <DrawerNavbar style={{ paddingLeft: '40px' }}></DrawerNavbar>
                             </>
                         ) : (
                             <>
-                                <Title>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
+                                <Title onClick={navigateToHome}>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
                                 <Tabs sx={{ marginLeft: 'auto' }} value={value} onChange={(e, value) => setValue(value)} textColor="white" indicatorColor="primary"
                                 >
                                     <Tab onClick={navigateToHome} label='Home' />

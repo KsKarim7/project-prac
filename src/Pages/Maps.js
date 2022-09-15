@@ -5,9 +5,9 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 const Maps = () => {
 
     const MapSection = styled(Box)(({ theme }) => ({
-        display: 'flex',
-        margin: '20 0 20 0',
-        justifyContent: 'center',
+        // display: 'flex',
+        // margin: '20 0 20 0',
+        // justifyContent: 'center',
         // [theme.breakpoints.down('md')]: {
         //     objectFit: 'cover',
         //     height: 120
@@ -16,7 +16,7 @@ const Maps = () => {
 
     const Heading = styled(Typography)(({ theme }) => ({
 
-        margin: '3em 0px 2em 0px',
+        margin: '2em 0px 1.5em 0px',
         textAlign: 'center',
         fontSize: '40px',
         fontWeight: 'bolder',

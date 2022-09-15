@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Carousels from './Carousels';
 import Maps from './Maps';
 import PageTItle from './PageTItle';
+import Target from './Target';
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <PageTItle title='Home'></PageTItle>
             <Banner></Banner>
             <Carousels></Carousels>
+            <Target></Target>
             <Maps></Maps>
         </Component>
     );

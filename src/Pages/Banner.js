@@ -39,13 +39,9 @@ const MidBanner = styled(Typography)(({ theme }) => ({
     }
 }))
 
-// const MidBanner = styled(Typography)`
-// font-size:3rem;
-// font-weight:semi-bold
-// `
-
 const Banner = () => {
     const logoURL = 'https://i.ibb.co/kyBg7Yc/prasc.png';
+
     return (
         <MainBanner >
             <MidBanner>
