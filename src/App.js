@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import { Box } from '@mui/system';
 import Admission from './Pages/Admission';
+import Footer from './Pages/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/admission' element={<Admission></Admission>}></Route>
         </Routes>
       </Box>
+      <Footer></Footer>
 
     </>
   );
