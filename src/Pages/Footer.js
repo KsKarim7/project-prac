@@ -57,7 +57,7 @@ const Footer = () => {
                 </List>
             </Content>
             <Bottom className="foot">
-                <small>copyright  ©yourTechGuy.ks.com </small>
+                <small>copyright© prof.rowshanahmedschool@gmail.com </small>
                 <small>All right reserved {year} </small>
             </Bottom>
         </Foot>

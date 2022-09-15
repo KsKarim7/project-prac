@@ -86,7 +86,7 @@ const Header = () => {
                     <BottomHeader>
                         <Box style={{ display: 'flex' }}>
                             <CallIco />
-                            <SubTitle> Give Us a Call at: 01611-625614, 01682825253</SubTitle>
+                            <SubTitle> Give Us a Call at: +8801611-625614, +8801682825253</SubTitle>
                         </Box>
                         <SubTitle>prof.rowshanahmedschool@gmail.com</SubTitle>
                     </BottomHeader>
