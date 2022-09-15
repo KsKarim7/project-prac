@@ -1,11 +1,14 @@
 import { Box } from '@mui/material';
 import React from 'react';
+import PageTItle from './PageTItle';
+
 
 const Admission = () => {
     const posterURL = 'https://i.ibb.co/BzV8rx0/Design-Final.png';
     const poster2URL = 'https://i.ibb.co/N3zL3QQ/Design-Final-2.png';
     return (
         <Box>
+            <PageTItle title="Admission"></PageTItle>
             <img style={{ width: '49%', margin: '5px' }} src={posterURL} alt="" />
             <img style={{ width: '50%', margin: 'auto' }} src={poster2URL} alt="" />
         </Box>
