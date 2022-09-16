@@ -23,8 +23,6 @@ const MainBanner = styled(Box)(({ theme }) => ({
 }))
 
 const Title = styled(Typography)(({ theme }) => ({
-    // margin: '1 0px 0px 0px',
-    // textAlign: 'center',
     fontSize: '45px',
     fontWeight: 'bolder',
     fontFamily: 'Myriad Pro',

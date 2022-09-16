@@ -4,8 +4,8 @@ import { useState } from 'react';
 import DrawerNavbar from './DrawerNavbar';
 import { Box } from '@mui/system';
 import CallIcon from '@mui/icons-material/Call';
-import { Link, useNavigate } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
+import EmailIcon from '@mui/icons-material/Email';
 
 const NavBar = styled(AppBar)`
 background-image:linear-gradient(to left, #b22222 11%, #008000 70%)
@@ -64,6 +64,13 @@ const CallIco = styled(CallIcon)(({ theme }) => ({
     }
 
 }));
+const EmailIco = styled(EmailIcon)(({ theme }) => ({
+    [theme.breakpoints.down('lg')]: {
+        paddingLeft: '5px',
+        fontSize: '15px',
+    }
+
+}));
 
 const Header = () => {
     const navigate = useNavigate();
@@ -98,7 +105,10 @@ const Header = () => {
                             <CallIco />
                             <SubTitle> Give Us a Call at: +8801611-625614, +8801682825253</SubTitle>
                         </Box>
-                        <SubTitle>prof.rowshanahmedschool@gmail.com</SubTitle>
+                        <Box style={{ display: 'flex' }}>
+                            <EmailIco />
+                            <SubTitle>prof.rowshanahmedschool@gmail.com</SubTitle>
+                        </Box>
                     </BottomHeader>
                 </SubHeader>
                 <Toolbar>
