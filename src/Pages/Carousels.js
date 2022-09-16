@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled, Typography } from '@mui/material';
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { carouselData } from '../data';
@@ -33,26 +33,43 @@ const responsive = {
     }
 };
 
+const Heading = styled(Typography)(({ theme }) => ({
+
+    margin: '2em 0px 1.5em 0px',
+    textAlign: 'center',
+    fontSize: '40px',
+    fontWeight: 'bolder',
+    fontFamily: 'Myriad Pro ',
+    [theme.breakpoints.down('md')]: {
+        margin: '1.5em 0px 1em 0px',
+        fontSize: '30px',
+        fontFamily: 'Myriad Pro Semibold',
+    }
+}));
+
 const Carousels = () => {
     return (
-        <Carousel responsive={responsive}
-            swipeable={false}
-            draggable={false}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={4000}
-            keyBoardControl={true}
-            slidesToSlide={1}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
-            containerClass="carousel-container"
-        >
-            {
-                carouselData.map(data => (
-                    <Image src={data.url} alt="carousel" />
-                ))
-            }
-        </Carousel>
+        <>
+            <Heading>A Glimpse of our Institution</Heading>
+            <Carousel responsive={responsive}
+                swipeable={false}
+                draggable={false}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={4000}
+                keyBoardControl={true}
+                slidesToSlide={1}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+                containerClass="carousel-container"
+            >
+                {
+                    carouselData.map(data => (
+                        <Image src={data.url} alt="carousel" />
+                    ))
+                }
+            </Carousel>
+        </>
     );
 };
 

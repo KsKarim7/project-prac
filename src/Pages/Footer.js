@@ -36,7 +36,7 @@ const List = styled('ul')`
     gap: 18px;
 `
 const Bottom = styled(Box)`
-text-align: center;
+    text-align: center;
     padding-bottom: 10px;
     background-color: #b22222;
 `
@@ -47,7 +47,7 @@ const Footer = () => {
     return (
         <Foot className='bg-dark text '>
             <Content className="content">
-                <Head>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE(PRASC)</Head>
+                <Head>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE (PRASC)</Head>
                 <Para>Simply Exceptional</Para>
                 <List className="socials">
                     <li><a href="https://www.facebook.com/Professor-Rowshan-Ahmed-School-College-103117429199646" target="_blank"> <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> </a></li>

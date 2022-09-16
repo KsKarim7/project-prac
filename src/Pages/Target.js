@@ -7,12 +7,19 @@ const Target = () => {
     text-align:center;
     padding:0 300px
     `
-    const Head = styled(Typography)`
-    margin-bottom:20px;
-    font-size:40px;
-    font-weight:bolder;
-    fontFamily: Myriad Pro;
-`
+    const Heading = styled(Typography)(({ theme }) => ({
+        margin: '2em 0px 1em 0px',
+        textAlign: 'center',
+        fontSize: '40px',
+        fontWeight: 'bolder',
+        fontFamily: 'Myriad Pro ',
+        [theme.breakpoints.down('md')]: {
+            margin: '1.5em 0px 1em 0px',
+            fontSize: '30px',
+            fontFamily: 'Myriad Pro Semibold',
+        }
+    }));
+
     const Bold = {
         fontSize: ' 23px',
         fontWeight: 'bolder'
@@ -26,9 +33,9 @@ const Target = () => {
 
     return (
         <Section>
-            <Head>
+            <Heading>
                 Our Aim And Goals
-            </Head>
+            </Heading>
             <Text>
                 <span style={Bold}>Mission:</span> Children are our future glory we are dedicated to their success. To nurture healthy and happy individuals with strength of intelligence ,  ready to serve, ready for the future.
             </Text>
@@ -39,7 +46,7 @@ const Target = () => {
                 <li>Power of excellence.</li>
             </Text>
             <Text>
-                Counseling & Guidance: the present-day students undergo a number of problems and confusion. To mould the students in the right way,to clarify their confidence, strengthen their confidence and energy, to motivate them to correct ways and to solve their problems they need effective counseling. The guide teachers will  discuss with the students to solve the problems.
+                <span style={Bold}>Counseling & Guidance:</span> the present-day students undergo a number of problems and confusion. To mould the students in the right way,to clarify their confidence, strengthen their confidence and energy, to motivate them to correct ways and to solve their problems they need effective counseling. The guide teachers will  discuss with the students to solve the problems.
             </Text>
             <Text>
                 <span style={Bold}>ICARE Facilities:</span>

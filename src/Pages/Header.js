@@ -78,6 +78,16 @@ const Header = () => {
         navigate('/')
     }
 
+    const navigateToNoticeBoard = () => {
+        navigate('/notice')
+    }
+    const navigateToContact = () => {
+        navigate('/contact')
+    }
+    const navigateToGoverningBody = () => {
+        navigate('/governingBody')
+    }
+
     const logoURL = 'https://i.ibb.co/kyBg7Yc/prasc.png';
     return (
         <>
@@ -106,10 +116,10 @@ const Header = () => {
                                 <Tabs sx={{ marginLeft: 'auto' }} value={value} onChange={(e, value) => setValue(value)} textColor="white" indicatorColor="primary"
                                 >
                                     <Tab onClick={navigateToHome} label='Home' />
-                                    <Tab label='Notice Board' />
+                                    <Tab onClick={navigateToNoticeBoard} label='Notice Board' />
                                     <Tab onClick={navigateToAdmission} label='Admission' />
-                                    <Tab label='Contact Us' />
-                                    <Tab label='Governing Body' />
+                                    <Tab onClick={navigateToContact} label='Contact Us' />
+                                    <Tab onClick={navigateToGoverningBody} label='Governing Body' />
 
                                 </Tabs>
                             </>

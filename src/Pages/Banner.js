@@ -21,17 +21,20 @@ const MainBanner = styled(Box)(({ theme }) => ({
         textAlign: 'center'
     }
 }))
+
 const Title = styled(Typography)(({ theme }) => ({
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    // overflow: 'hidden',
-    [theme.breakpoints.down('lg')]: {
-        display: 'block',
-        margin: '0 0',
-        padding: '0 0px',
-        fontSize: '1.5em',
+    // margin: '1 0px 0px 0px',
+    // textAlign: 'center',
+    fontSize: '45px',
+    fontWeight: 'bolder',
+    fontFamily: 'Myriad Pro',
+    [theme.breakpoints.down('md')]: {
+        margin: '1.5em 0px 1em 0px',
+        fontSize: '35px',
+        fontFamily: 'Myriad Pro Semibold',
     }
-}))
+}));
+
 const MidBanner = styled(Typography)(({ theme }) => ({
     width: '70%',
     [theme.breakpoints.down('lg')]: {

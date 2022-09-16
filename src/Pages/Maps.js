@@ -1,6 +1,6 @@
 import { styled, Typography, Box } from '@mui/material';
 import React from 'react';
-import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Maps = () => {
 
@@ -20,9 +20,8 @@ const Maps = () => {
         textAlign: 'center',
         fontSize: '40px',
         fontWeight: 'bolder',
-        fontFamily: 'Myriad Pro Semibold',
+        fontFamily: 'Myriad Pro ',
         [theme.breakpoints.down('md')]: {
-            objectFit: 'cover',
             margin: '1.5em 0px 1em 0px',
             fontSize: '30px',
             fontFamily: 'Myriad Pro Semibold',
