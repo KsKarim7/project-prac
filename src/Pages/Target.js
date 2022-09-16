@@ -2,23 +2,43 @@ import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
 
 const Target = () => {
-    const Section = styled(Box)`
-    margin-top:80px;
-    text-align:center;
-    padding:0 300px
-    `
+    // const Section = styled(Box)`
+    // margin-top:80px;
+    // text-align:center;
+    // padding:0 300px
+    // `
     const Heading = styled(Typography)(({ theme }) => ({
-        margin: '2em 0px 1em 0px',
-        textAlign: 'center',
         fontSize: '40px',
         fontWeight: 'bolder',
         fontFamily: 'Myriad Pro ',
         [theme.breakpoints.down('md')]: {
-            margin: '1.5em 0px 1em 0px',
             fontSize: '30px',
             fontFamily: 'Myriad Pro Semibold',
         }
     }));
+    const Section = styled(Box)(({ theme }) => ({
+        marginTop: '80px',
+        textAlign: 'center',
+        padding: '0 300px',
+        [theme.breakpoints.down('md')]: {
+            marginTop: '80px',
+            textAlign: 'center',
+            padding: '0 0px',
+        }
+    }));
+
+    // const Title = styled(Typography)(({ theme }) => ({
+    //     // margin: '1 0px 0px 0px',
+    //     // textAlign: 'center',
+    //     fontSize: '45px',
+    //     fontWeight: 'bolder',
+    //     fontFamily: 'Myriad Pro',
+    //     [theme.breakpoints.down('md')]: {
+    //         margin: '1.5em 0px 1em 0px',
+    //         fontSize: '35px',
+    //         fontFamily: 'Myriad Pro Semibold',
+    //     }
+    // }));
 
     const Bold = {
         fontSize: ' 23px',
