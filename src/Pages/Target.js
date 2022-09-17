@@ -27,19 +27,6 @@ const Target = () => {
         }
     }));
 
-    // const Title = styled(Typography)(({ theme }) => ({
-    //     // margin: '1 0px 0px 0px',
-    //     // textAlign: 'center',
-    //     fontSize: '45px',
-    //     fontWeight: 'bolder',
-    //     fontFamily: 'Myriad Pro',
-    //     [theme.breakpoints.down('md')]: {
-    //         margin: '1.5em 0px 1em 0px',
-    //         fontSize: '35px',
-    //         fontFamily: 'Myriad Pro Semibold',
-    //     }
-    // }));
-
     const Bold = {
         fontSize: ' 23px',
         fontWeight: 'bolder'

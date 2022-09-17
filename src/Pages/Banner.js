@@ -11,9 +11,7 @@ import React from 'react';
 const MainBanner = styled(Box)(({ theme }) => ({
     display: 'grid',
     margin: '200px 150px 50px 150px',
-    // padding: '0px 100px',
     gridTemplateColumns: '8fr 4fr',
-    // overflow: 'hidden',
     [theme.breakpoints.down('lg')]: {
         display: 'block',
         margin: '0 auto',

@@ -90,7 +90,7 @@ const Social = styled('a')(({ theme }) => ({
 
     }
 }))
-const BottonFoot = styled('small')(({ theme }) => ({
+const BottomFoot = styled('small')(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         display: 'inline-block'
     }
@@ -146,7 +146,7 @@ const Footer = () => {
                 </List>
             </Content>
             <Bottom>
-                <BottonFoot>copyright© prof.rowshanahmedschool@gmail.com </BottonFoot>
+                <BottomFoot>copyright© prof.rowshanahmedschool@gmail.com </BottomFoot>
                 <small> | All right reserved {year} </small>
                 <small>| Developed By Ks</small>
             </Bottom>
