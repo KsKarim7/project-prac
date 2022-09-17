@@ -17,7 +17,7 @@ padding-bottom:12px
 `
 
 
-const DrawerNavbar = () => {
+const DrawerNavbar = ({ navigateToGoverningBody, navigateToNoticeBoard, navigateToContact }) => {
     const navigate = useNavigate();
 
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -33,23 +33,13 @@ const DrawerNavbar = () => {
             <Drawer open={openDrawer}
                 onClose={() => setOpenDrawer(false)}>
                 <SideBar>
-                    {/* {
-                        Pages.map((page, index) => (
-                            <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
-                                <ListItemIcon>
-                                    <ListItemText style={{ color: 'white' }}>{page}</ListItemText>
-                                </ListItemIcon>
-                            </ListItemButton>
-
-                        ))
-                    } */}
                     <ListItemButton>
                         <ListItemIcon onClick={() => setOpenDrawer(false)} style={{ display: 'block', color: 'white' }}>
                             <ListItems onClick={navigateToHome}>Home</ListItems>
-                            <ListItems>Notice Board</ListItems>
+                            <ListItems onClick={navigateToNoticeBoard}>Notice Board</ListItems>
                             <ListItems onClick={navigateToAdmission}>Admission</ListItems>
-                            <ListItems>Contact Us</ListItems>
-                            <ListItems>Governing Body</ListItems>
+                            <ListItems onClick={navigateToContact}>Contact Us</ListItems>
+                            <ListItems onClick={navigateToGoverningBody}>Governing Body</ListItems>
                         </ListItemIcon>
                     </ListItemButton>
                 </SideBar>

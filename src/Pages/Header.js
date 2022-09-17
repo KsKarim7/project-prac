@@ -118,7 +118,7 @@ const Header = () => {
                         isMatch ? (
                             <>
                                 <Title onClick={navigateToHome}>PROFESSOR ROWSHAN AHMED SCHOOL AND COLLEGE</Title>
-                                <DrawerNavbar style={{ paddingLeft: '40px' }}></DrawerNavbar>
+                                <DrawerNavbar navigateToGoverningBody={navigateToGoverningBody} navigateToNoticeBoard={navigateToNoticeBoard} navigateToContact={navigateToContact} style={{ paddingLeft: '40px' }}></DrawerNavbar>
                             </>
                         ) : (
                             <>
