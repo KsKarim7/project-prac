@@ -54,6 +54,7 @@ const Heading = styled(Typography)(({ theme }) => ({
         margin: '1.5em 0px 1em 0px',
         fontSize: '30px',
         fontFamily: 'Myriad Pro Semibold',
+        fontWeight: 'bolder',
     }
 }));
 
@@ -74,6 +75,8 @@ const GoverningBody = () => {
                             <Topic gutterBottom variant="h5" component="div">
                                 Kamruzzaman Ahmed
                             </Topic>
+                            <Typography>BSc( hons.),MSc in physics
+                                Jagannath University, Dhaka.</Typography>
                             <Typography variant="body2" color="text.secondary">
                                 <Bold>Designation:</Bold> Chairman & Principal
                             </Typography>
