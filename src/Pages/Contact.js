@@ -221,7 +221,7 @@ const Contact = () => {
             <SubHeading><LocationOnIcon style={{ fontSize: '30px' }} /> Contact</SubHeading>
 
             <CardBox>
-                <Card style={{ boxShadow: '30px 20px 20px 30px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)', }}>
+                <Card style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px' }}>
                     <CardContent>
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>
@@ -232,7 +232,7 @@ const Contact = () => {
                     </CardContent>
                 </Card>
 
-                <Card style={{ boxShadow: '30px 20px 20px 30px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)', }}>
+                <Card style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px' }}>
                     <CardContent>
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>
@@ -243,7 +243,7 @@ const Contact = () => {
                     </CardContent>
                 </Card>
 
-                <Card style={{ boxShadow: '30px 20px 20px 30px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)', }}>
+                <Card style={{ boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px' }}>
                     <CardContent>
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>

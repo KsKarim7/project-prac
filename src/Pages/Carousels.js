@@ -4,11 +4,6 @@ import Carousel from 'react-multi-carousel';
 import { carouselData } from '../data';
 import 'react-multi-carousel/lib/styles.css';
 
-// const Image = styled('img')({
-//     width: "100%",
-//     height: "550px"
-// })
-
 const Image = styled('img')(({ theme }) => ({
     width: "100%",
     height: "550px",
