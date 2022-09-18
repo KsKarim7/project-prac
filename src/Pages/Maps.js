@@ -39,7 +39,7 @@ const Maps = () => {
                     />
                     <Marker position={[23.693703805702985, 90.44518757901422]}>
                         <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            Shyampur(beside bot-tola bridge), No.5 ward,Kodomtoli Thana, Dhaka-1204
                         </Popup>
                     </Marker>
                 </MapContainer>

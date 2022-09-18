@@ -80,9 +80,7 @@ const GoverningBody = () => {
                             <Typography variant="body2" color="text.secondary">
                                 <Bold>Designation:</Bold> Chairman & Principal
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                <Bold>Cell:</Bold> +8801915785776
-                            </Typography>
+
                             <Typography variant="body2" color="text.secondary">
                                 <Bold>Email:</Bold>
                             </Typography>
@@ -99,13 +97,10 @@ const GoverningBody = () => {
                         />
                         <CardContent>
                             <Topic gutterBottom variant="h5" component="div">
-                                Asadul islam
+                                Asadul Islam (Dulal)
                             </Topic>
                             <Typography variant="body2" color="text.secondary">
                                 <Bold>Designation:</Bold> Managing Director
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                <Bold>Cell:</Bold> +8801XXXXXXXXX
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 <Bold>Email:</Bold> xxx@gmail.com
