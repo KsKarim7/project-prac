@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import { Box, Button, Card, CardContent, styled, Typography } from '@mui/material';
+import { Box, Card, CardContent, styled, Typography } from '@mui/material';
 import React from 'react';
 import { useRef } from 'react';
 import PageTItle from './PageTItle';
@@ -11,14 +11,11 @@ import { grid } from '@mui/system';
 
 
 const ContactForm = styled(Box)`
-// width: 100%;
-// margin: auto;
-`
 
+`
 const UList = styled('ul')({
-    // padding: 0,
-    // margin: 0,
 })
+
 const TextArea = styled('textarea')({
     width: '100%',
     border: 0,
@@ -30,29 +27,51 @@ const TextArea = styled('textarea')({
     boxSizing: 'border-box',
     minHeight: '150px',
 })
-const List = styled('li')({
+
+const List = styled('li')(({ theme }) => ({
     padding: 0,
     margin: 0,
     listStyle: 'none',
     marginBottom: '10px',
-    // opacity: 0,
     overflow: 'hidden',
     display: 'block',
     clear: 'both',
-    position: 'relative',
-    animation: 'fadeInUp 2s 2s',
-    animationFillMode: 'forwards',
-})
+    width: '70%',
+    marginLeft: '1%',
+    float: 'left',
+    borderRadius: '10px',
+    [theme.breakpoints.down('sm')]: {
+        width: '100%',
+
+    }
+}))
+
+const ModifiedList = styled('li')(({ theme }) => ({
+    padding: 0,
+    margin: 0,
+    listStyle: 'none',
+    marginBottom: '10px',
+    overflow: 'hidden',
+    display: 'block',
+    clear: 'both',
+    width: '50%',
+    marginLeft: '1%',
+    float: 'left',
+    borderRadius: '10px',
+    [theme.breakpoints.down('sm')]: {
+        width: '80%',
+    }
+}))
+
+
+
 
 const Heading = styled(Typography)(({ theme }) => ({
-
-    margin: '2em 0px 1em 0px',
     textAlign: 'center',
     fontSize: '40px',
     fontWeight: 'bolder',
     fontFamily: 'Myriad Pro ',
     [theme.breakpoints.down('md')]: {
-        margin: '1.5em 0px 1em 0px',
         fontSize: '30px',
         fontFamily: 'Myriad Pro Semibold',
     }
@@ -61,12 +80,12 @@ const SubHeading = styled(Typography)(({ theme }) => ({
     fontSize: '35px',
     fontWeight: 'bolder',
     fontFamily: 'Myriad Pro ',
-    margin: '50px 0 30px 60px',
+    margin: '45px 0 30px 0px',
     textAlign: 'center',
     [theme.breakpoints.down('md')]: {
-        fontSize: '20px',
+        margin: '40px 0 30px 0px',
+        fontSize: '25px',
         fontFamily: 'Myriad Pro',
-        margin: '50px 0 30px 60px',
         textAlign: 'center',
     }
 }));
@@ -75,9 +94,10 @@ const Section = styled(Box)(({ theme }) => ({
     margin: 'auto',
     boxShadow: '30px 20px 20px 30px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)',
     [theme.breakpoints.down('md')]: {
+        maxWidth: '100%',
         fontSize: '20px',
         fontFamily: 'Myriad Pro',
-        margin: '60px 0 30px 60px',
+        margin: '20px 15px 30px 15px',
     }
 }));
 const CardBox = styled(Box)(({ theme }) => ({
@@ -91,8 +111,8 @@ const CardBox = styled(Box)(({ theme }) => ({
         maxWidth: '80%',
         margin: 'auto',
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gridGap: '50px',
+        gridTemplateColumns: 'repeat(1, 1fr)',
+        gridGap: '20px',
     }
 }));
 
@@ -103,20 +123,7 @@ font-size:20px
 
 
 const Contact = () => {
-    const half = {
-        width: '50%',
-        marginLeft: '1%',
-        float: 'left',
-        clear: 'none',
-        borderRadius: '10px'
-    }
-    const textArea = {
-        width: '70%',
-        marginLeft: '1%',
-        float: 'left',
-        clear: 'none',
-        borderRadius: '10px'
-    }
+
     const input = {
         width: '100%',
         border: 0,
@@ -176,13 +183,13 @@ const Contact = () => {
             <Section >
                 <Card>
                     <CardContent>
-                        <ContactForm className="contact-form">
+                        <ContactForm>
                             <form ref={refForm} onSubmit={sendEmail}>
                                 <UList>
-                                    <List className="half" style={half}>
+                                    <ModifiedList>
                                         <input placeholder="Name" type="text" style={input} name="name" required />
-                                    </List>
-                                    <List className="half" style={half}>
+                                    </ModifiedList>
+                                    <ModifiedList >
                                         <input
                                             placeholder="Email"
                                             type="email"
@@ -190,8 +197,8 @@ const Contact = () => {
                                             name="email"
                                             required
                                         />
-                                    </List>
-                                    <List style={half} >
+                                    </ModifiedList>
+                                    <ModifiedList>
                                         <input
                                             placeholder="Subject"
                                             type="text"
@@ -199,8 +206,8 @@ const Contact = () => {
                                             style={input}
                                             required
                                         />
-                                    </List>
-                                    <List style={textArea}>
+                                    </ModifiedList>
+                                    <List>
                                         <TextArea
                                             placeholder="Your Message"
                                             name="message"

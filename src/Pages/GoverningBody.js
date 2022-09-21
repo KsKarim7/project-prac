@@ -82,7 +82,7 @@ const GoverningBody = () => {
                             </Typography>
 
                             <Typography variant="body2" color="text.secondary">
-                                <Bold>Email:</Bold>
+                                <Bold>Email:</Bold> xxx@gmail.com
                             </Typography>
                         </CardContent>
                     </CardActionArea>

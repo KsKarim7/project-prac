@@ -106,6 +106,7 @@ const Bottom = styled(Box)(({ theme }) => ({
     }
 }));
 
+
 const SubTitle = styled(Typography)(({ theme }) => ({
     paddingLeft: '10px',
     fontFamily: 'Myriad Pro Semibold',
@@ -116,6 +117,11 @@ const SubTitle = styled(Typography)(({ theme }) => ({
     }
 
 }));
+
+const MySelf = styled('a')({
+    // textDecoration: 'none',
+    color: 'lightGreen'
+})
 
 const Footer = () => {
     const today = new Date();
@@ -148,7 +154,7 @@ const Footer = () => {
             <Bottom>
                 <BottomFoot>copyright© prof.rowshanahmedschool@gmail.com </BottomFoot>
                 <small> | All right reserved {year} </small>
-                <small>| Developed By Ks</small>
+                <small>| Developed By <MySelf href="https://www.linkedin.com/in/kskarim17/" target="_blank">Ks Karim</MySelf></small>
             </Bottom>
         </Foot>
     );
