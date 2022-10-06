@@ -132,7 +132,7 @@ const Footer = () => {
                 <Head>PROFESSOR ROWSHAN AHMED SCHOOL & COLLEGE (PRASC)</Head>
                 <Box style={{ display: 'flex' }}>
                     <LocationOnIcon />
-                    <Address> Shyampur(beside bot-tola bridge), No.5 ward,Kodomtoli Thana, Dhaka-1204</Address>
+                    <Address> Shyampur(beside bot-tola bridge), Hazi Salimullah Road,Kodomtoli, Dhaka-1204</Address>
 
                 </Box>
                 <Box style={{ display: 'flex' }}>

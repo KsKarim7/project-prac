@@ -8,6 +8,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { grid } from '@mui/system';
+import Maps from './Maps';
 
 
 const ContactForm = styled(Box)`
@@ -233,7 +234,7 @@ const Contact = () => {
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>
                                 <Topic>Address</Topic>
-                                <Typography>Shyampur(beside bot-tola bridge), No.5 ward,Kodomtoli Thana, Dhaka-1204</Typography>
+                                <Typography>Shyampur(beside bot-tola bridge), Hazi Salimullah Road,Kodomtoli, Dhaka-1204</Typography>
                             </Box>
                         </ContactForm>
                     </CardContent>
@@ -263,17 +264,7 @@ const Contact = () => {
             </CardBox>
 
             <Box style={{ marginTop: '80px' }}>
-                <MapContainer center={[23.693703805702985, 90.44518757901422]} zoom={13} scrollWheelZoom={true}>
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={[23.693703805702985, 90.44518757901422]}>
-                        <Popup>
-                            Shyampur(beside bot-tola bridge), No.5 ward,Kodomtoli Thana, Dhaka-1204
-                        </Popup>
-                    </Marker>
-                </MapContainer>
+                <Maps></Maps>
             </Box>
             <ToastContainer />
         </>

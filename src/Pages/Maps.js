@@ -32,14 +32,14 @@ const Maps = () => {
         <>
             <Heading>We are located here</Heading>
             <MapSection>
-                <MapContainer center={[23.693703805702985, 90.44518757901422]} zoom={13} scrollWheelZoom={true}>
+                <MapContainer center={[23.760902492738417, 90.36339237529714]} zoom={23} scrollWheelZoom={false}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={[23.693703805702985, 90.44518757901422]}>
+                    <Marker position={[23.760902492738417, 90.36339237529714]}>
                         <Popup>
-                            Shyampur(beside bot-tola bridge), No.5 ward,Kodomtoli Thana, Dhaka-1204
+                            Shyampur(beside bot-tola bridge), Hazi Salimullah Road,Kodomtoli, Dhaka-1204
                         </Popup>
                     </Marker>
                 </MapContainer>

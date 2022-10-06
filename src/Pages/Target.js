@@ -53,7 +53,7 @@ const Target = () => {
                 <li>Power of excellence.</li>
             </Text>
             <Text>
-                <span style={Bold}>Counseling & Guidance:</span> the present-day students undergo a number of problems and confusion. To mould the students in the right way,to clarify their confidence, strengthen their confidence and energy, to motivate them to correct ways and to solve their problems they need effective counseling. The guide teachers will  discuss with the students to solve the problems.
+                <span style={Bold}>Counseling & Guidance:</span> The present day students undergo a number of problems and confusion. To mould the students in the right way, to clarify their confidence, strengthen their confidence and energy, to motivate them to correct ways and to solve their problems they need effective counseling. The guide teachers will  discuss with the students to solve the problems.
             </Text>
             <Text>
                 <span style={Bold}>ICARE Facilities:</span>

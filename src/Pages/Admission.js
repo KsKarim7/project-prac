@@ -22,7 +22,7 @@ const Admission = () => {
     const poster2URL = 'https://i.ibb.co/N3zL3QQ/Design-Final-2.png';
     return (
         <Box>
-            <Heading>Admission Going On!!!</Heading>
+            <Heading>Admission is Going On!!!</Heading>
             <PageTItle title="Admission"></PageTItle>
             <img style={{ width: '49%', margin: '5px' }} src={posterURL} alt="" />
             <img style={{ width: '50%', margin: 'auto' }} src={poster2URL} alt="" />
