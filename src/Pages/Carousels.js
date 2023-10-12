@@ -6,10 +6,10 @@ import 'react-multi-carousel/lib/styles.css';
 
 const Image = styled('img')(({ theme }) => ({
     width: "100%",
-    height: "550px",
+    height: "750px",
     [theme.breakpoints.down('sm')]: {
         objectFit: 'cover',
-        height: 180
+        height: 200
     }
 }))
 
