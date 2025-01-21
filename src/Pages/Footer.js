@@ -132,12 +132,12 @@ const Footer = () => {
                 <Head>PROFESSOR ROWSHAN AHMED SCHOOL & COLLEGE (PRASC)</Head>
                 <Box style={{ display: 'flex' }}>
                     <LocationOnIcon />
-                    <Address> Shyampur(beside bot-tola bridge), Hazi Salimullah Road,Kodomtoli, Dhaka-1204</Address>
+                    <Address> Holding No. 154/34 G, Shyampur, Dhaka-1204</Address>
 
                 </Box>
                 <Box style={{ display: 'flex' }}>
                     <CallIcon />
-                    <SubTitle style={{ lineHeight: '30px' }}> Give Us a Call at: +8801611-625614, +8801682825253</SubTitle>
+                    <SubTitle style={{ lineHeight: '30px' }}> Give Us a Call at: +8801915785776, +8801819450405</SubTitle>
                 </Box>
                 <Box style={{ display: 'flex' }}>
                     <EmailIcon />

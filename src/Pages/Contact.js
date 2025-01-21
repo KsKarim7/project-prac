@@ -234,7 +234,7 @@ const Contact = () => {
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>
                                 <Topic>Address</Topic>
-                                <Typography>Shyampur(beside bot-tola bridge), Hazi Salimullah Road,Kodomtoli, Dhaka-1204</Typography>
+                                <Typography>Holding No. 154/34 G,Shyampur,Dhaka-1204</Typography>
                             </Box>
                         </ContactForm>
                     </CardContent>
@@ -256,7 +256,7 @@ const Contact = () => {
                         <ContactForm>
                             <Box style={{ textAlign: 'center' }}>
                                 <Topic>Phone</Topic>
-                                <Typography>+8801611-625614, +8801682825253</Typography>
+                                <Typography>+8801915785776, +8801819450405</Typography>
                             </Box>
                         </ContactForm>
                     </CardContent>
